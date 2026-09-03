@@ -256,7 +256,7 @@ export default function Hero() {
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-gray-100 border border-gray-200 shadow-xl">
 
                 <Image
-                  src="/images/portrait.jpg"
+                  src="/myPhoto.jpeg"
                   alt="Abash Ansari - Full-Stack Developer"
                   fill
                   priority

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 interface ProjectProps {
@@ -103,16 +104,16 @@ export default function ProjectCard({ project, index }: ProjectProps) {
           className="w-full lg:w-1/2 relative group"
         >
           <div className="relative w-full aspect-video bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden flex justify-center items-center shadow-md group-hover:shadow-xl transition-all duration-700">
-            {/* Fallback layout in case image is missing */}
-            <div className="absolute inset-0 flex items-center justify-center text-gray-400 font-mono text-sm font-semibold uppercase tracking-widest z-0">
-              [{project.imageType}.JPG]
-            </div>
-            
             {/* Overlay pattern */}
             <div className="absolute inset-0 bg-grid-pattern opacity-30 mix-blend-overlay z-10 pointer-events-none"></div>
             
-            {/* The actual image would go here using next/image, assuming path exists */}
-            {/* <Image src={`/projects/${project.id}.jpg`} alt={project.name} fill className="object-cover z-20 opacity-80 group-hover:opacity-100 transition-opacity group-hover:scale-105 duration-700" /> */}
+            <Image 
+              src={`/${project.imageType}.png`} 
+              alt={project.name} 
+              fill 
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover z-20 opacity-90 group-hover:opacity-100 transition-opacity group-hover:scale-105 duration-700" 
+            />
             
             <div className="absolute inset-0 z-30 pointer-events-none border border-transparent group-hover:border-cyan-500/20 rounded-2xl transition-colors duration-700"></div>
           </div>
