@@ -1,26 +1,47 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #06141B;
+  --foreground: #F2FFFD;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-primary: #06141B;
+  --color-secondary: #0B2A32;
+  --color-accent-teal: #00D9C0;
+  --color-accent-cyan: #39E6FF;
+  --color-highlight: #8BFFE9;
+  --color-text-primary: #F2FFFD;
+  --color-text-secondary: #8FA9AD;
+  --color-border-teal: #17363D;
+  --color-surface-muted: #0D2027;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  
+  --background-image-radial-gradient: radial-gradient(var(--tw-gradient-stops));
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+}
+
+/* Custom utilities */
+@layer utilities {
+  .bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(23, 54, 61, 0.3) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(23, 54, 61, 0.3) 1px, transparent 1px);
+  }
+
+  .text-glow-teal {
+    text-shadow: 0 0 10px rgba(0, 217, 192, 0.5);
+  }
+
+  .box-glow-teal {
+    box-shadow: 0 0 15px rgba(0, 217, 192, 0.2);
+  }
 }
