@@ -19,7 +19,7 @@ export default function Home() {
       <Projects />
       <TechStack />
       <Journey />
-      <Blog />
+      {/* <Blog /> */}
       <Contact />
       <Footer />
     </>

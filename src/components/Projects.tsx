@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 relative bg-secondary">
+    <section id="projects" className="py-24 relative bg-gray-50 border-y border-gray-200">
       <div className="container mx-auto px-6 md:px-12">
         
         {/* Section Header */}
@@ -18,9 +18,9 @@ export default function Projects() {
             transition={{ duration: 0.6 }}
             className="flex items-center space-x-4 mb-6"
           >
-            <div className="h-[1px] w-12 bg-accent-teal"></div>
-            <span className="text-accent-teal font-mono text-sm tracking-widest uppercase">03 // Work</span>
-            <div className="h-[1px] w-12 bg-accent-teal"></div>
+            <div className="h-[1px] w-12 bg-cyan-500"></div>
+            <span className="text-cyan-600 font-mono text-sm font-semibold tracking-widest uppercase">03 // Work</span>
+            <div className="h-[1px] w-12 bg-cyan-500"></div>
           </motion.div>
           
           <motion.h2 
@@ -28,7 +28,7 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-text-primary mb-6 tracking-tight"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 mb-6 tracking-tight"
           >
             SELECTED WORK
           </motion.h2>
@@ -38,14 +38,14 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-text-secondary text-lg md:text-xl font-light tracking-wide max-w-2xl uppercase"
+            className="text-gray-600 text-lg md:text-xl font-medium tracking-wide max-w-2xl uppercase"
           >
             REAL APPLICATIONS BUILT AROUND REAL PROBLEMS.
           </motion.p>
         </div>
 
         {/* Projects List */}
-        <div className="flex flex-col">
+        <div className="flex flex-col space-y-12 lg:space-y-24">
           {projects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}

@@ -57,10 +57,10 @@ export default function Journey() {
                     {item.institution}
                   </p>
                   
-                  {item.score && (
+                  {item.field && (
                     <div className="pt-2">
                       <span className="inline-block bg-surface-muted border border-border-teal px-3 py-1 text-sm font-mono text-accent-cyan whitespace-pre-line">
-                        {item.score}
+                        {item.field}
                       </span>
                     </div>
                   )}

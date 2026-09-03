@@ -27,7 +27,7 @@ export const technologies = [
   {
     category: "BACKEND",
     icon: Server,
-    skills: ["Node.js", "Python", "FastAPI", "REST APIs"],
+    skills: ["Node.js","Express.js", "Python", "FastAPI"],
   },
   {
     category: "MOBILE",
@@ -37,14 +37,12 @@ export const technologies = [
   {
     category: "DATABASE",
     icon: Database,
-    skills: ["MongoDB", "Mongoose", "PostgreSQL", "SQLite", "SQLAlchemy"],
+    skills: ["MongoDB", "MySQL", "PostgreSQL", "SQLite", "SQLAlchemy"],
   },
   {
     category: "AI / MACHINE LEARNING",
     icon: BrainCircuit,
     skills: [
-      "Ollama",
-      "Llama",
       "Scikit-Learn",
       "Machine Learning",
       "AI Applications",
@@ -53,11 +51,11 @@ export const technologies = [
   {
     category: "TOOLS / CLOUD",
     icon: Cloud,
-    skills: ["Git", "GitHub", "AWS", "Docker", "Vercel"],
+    skills: ["Git", "GitHub","Linux","AWS", "Docker", "Vercel"],
   },
   {
     category: "PROGRAMMING",
     icon: Code2,
-    skills: ["C++", "Python", "JavaScript", "TypeScript"],
+    skills: ["C++", "Java", "Python", "JavaScript", "TypeScript"],
   },
 ];

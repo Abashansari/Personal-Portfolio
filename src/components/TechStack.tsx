@@ -2,6 +2,50 @@
 
 import { motion } from "framer-motion";
 import { technologies } from "@/data/technologies";
+import { 
+  FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaNodeJs, FaPython, 
+  FaRobot, FaBrain, FaGitAlt, FaGithub, FaLinux, FaAws, FaDocker, FaJava 
+} from "react-icons/fa";
+import { 
+  SiNextdotjs, SiTypescript, SiJavascript, SiTailwindcss, 
+  SiExpress, SiFastapi, SiExpo, SiMongodb, SiMysql, 
+  SiPostgresql, SiSqlite, SiSqlalchemy, SiScikitlearn, 
+  SiVercel, SiCplusplus 
+} from "react-icons/si";
+import { IconType } from "react-icons";
+
+const iconMap: Record<string, IconType> = {
+  "React": FaReact,
+  "Next.js": SiNextdotjs,
+  "TypeScript": SiTypescript,
+  "JavaScript": SiJavascript,
+  "HTML": FaHtml5,
+  "CSS": FaCss3Alt,
+  "Tailwind CSS": SiTailwindcss,
+  "Bootstrap": FaBootstrap,
+  "Node.js": FaNodeJs,
+  "Express.js": SiExpress,
+  "Python": FaPython,
+  "FastAPI": SiFastapi,
+  "React Native": FaReact,
+  "Expo": SiExpo,
+  "MongoDB": SiMongodb,
+  "MySQL": SiMysql,
+  "PostgreSQL": SiPostgresql,
+  "SQLite": SiSqlite,
+  "SQLAlchemy": SiSqlalchemy,
+  "Scikit-Learn": SiScikitlearn,
+  "Machine Learning": FaRobot,
+  "AI Applications": FaBrain,
+  "Git": FaGitAlt,
+  "GitHub": FaGithub,
+  "Linux": FaLinux,
+  "AWS": FaAws,
+  "Docker": FaDocker,
+  "Vercel": SiVercel,
+  "C++": SiCplusplus,
+  "Java": FaJava,
+};
 
 export default function TechStack() {
   return (
@@ -27,7 +71,7 @@ export default function TechStack() {
         {/* Tech Ecosystem Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {technologies.map((tech, index) => {
-            const Icon = tech.icon;
+            const CategoryIcon = tech.icon;
             return (
               <motion.div
                 key={tech.category}
@@ -42,7 +86,7 @@ export default function TechStack() {
                 
                 <div className="flex items-center space-x-4 mb-8">
                   <div className="p-3 bg-primary border border-border-teal text-accent-teal">
-                    <Icon size={24} strokeWidth={1.5} />
+                    <CategoryIcon size={24} strokeWidth={1.5} />
                   </div>
                   <h3 className="text-sm font-mono tracking-widest uppercase text-text-primary">
                     {tech.category}
@@ -50,12 +94,19 @@ export default function TechStack() {
                 </div>
 
                 <ul className="space-y-3">
-                  {tech.skills.map((skill) => (
-                    <li key={skill} className="flex items-center space-x-2 text-text-secondary">
-                      <div className="w-1.5 h-1.5 bg-border-teal group-hover:bg-accent-cyan transition-colors"></div>
-                      <span className="font-light tracking-wide">{skill}</span>
-                    </li>
-                  ))}
+                  {tech.skills.map((skill) => {
+                    const SkillIcon = iconMap[skill];
+                    return (
+                      <li key={skill} className="flex items-center space-x-3 text-text-secondary">
+                        {SkillIcon ? (
+                          <SkillIcon className="text-accent-teal w-4 h-4 group-hover:text-accent-cyan transition-colors" />
+                        ) : (
+                          <div className="w-1.5 h-1.5 bg-border-teal group-hover:bg-accent-cyan transition-colors"></div>
+                        )}
+                        <span className="font-light tracking-wide">{skill}</span>
+                      </li>
+                    );
+                  })}
                 </ul>
               </motion.div>
             );

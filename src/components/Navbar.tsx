@@ -16,7 +16,6 @@ const navLinks = [
   { name: "Projects", href: "#projects" },
   { name: "Tech Stack", href: "#tech-stack" },
   { name: "Journey", href: "#journey" },
-  { name: "Blog", href: "#blog" },
 ];
 
   return (
