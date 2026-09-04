@@ -43,9 +43,9 @@ export default function ProjectCard({ project, index }: ProjectProps) {
   return (
     <div className="relative p-8 md:p-12 lg:p-16 bg-white border border-gray-200 rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-500">
       <div className={`flex flex-col gap-12 lg:gap-24 ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center`}>
-        
+
         {/* Project Info */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: isEven ? -50 : 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -78,8 +78,8 @@ export default function ProjectCard({ project, index }: ProjectProps) {
               </h4>
               <div className="flex flex-wrap gap-2">
                 {project.techStack.map((tech) => (
-                  <span 
-                    key={tech} 
+                  <span
+                    key={tech}
                     className="px-3 py-1 bg-gray-50 border border-gray-200 text-gray-600 text-xs font-medium tracking-wider rounded-md"
                   >
                     {tech}
@@ -103,7 +103,7 @@ export default function ProjectCard({ project, index }: ProjectProps) {
             </div>
 
             <div className="pt-8">
-              <Link 
+              <Link
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -117,32 +117,32 @@ export default function ProjectCard({ project, index }: ProjectProps) {
         </motion.div>
 
         {/* Project Visual */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="w-full lg:w-1/2 relative group"
         >
-          <div 
+          <div
             className="relative w-full aspect-video bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden flex justify-center items-center shadow-md group-hover:shadow-xl transition-all duration-700 cursor-pointer"
             onClick={() => setIsPreviewOpen(true)}
           >
             {/* Overlay pattern */}
             <div className="absolute inset-0 bg-grid-pattern opacity-30 mix-blend-overlay z-10 pointer-events-none"></div>
-            
-            <Image 
-              src={`/${project.imageType}.png`} 
-              alt={project.name} 
-              fill 
+
+            <Image
+              src={`/${project.imageType}.png`}
+              alt={project.name}
+              fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover z-20 opacity-90 group-hover:opacity-100 transition-opacity group-hover:scale-105 duration-700" 
+              className="object-cover z-20 opacity-90 group-hover:opacity-100 transition-opacity group-hover:scale-105 duration-700"
             />
-            
+
             <div className="absolute inset-0 z-30 pointer-events-none border border-transparent group-hover:border-cyan-500/20 rounded-2xl transition-colors duration-700"></div>
           </div>
         </motion.div>
-        
+
       </div>
 
       {/* Lightbox */}
@@ -156,11 +156,11 @@ export default function ProjectCard({ project, index }: ProjectProps) {
             className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8 lg:p-12"
           >
             {/* Backdrop */}
-            <div 
-              className="absolute inset-0 bg-black/90 backdrop-blur-sm cursor-pointer" 
+            <div
+              className="absolute inset-0 bg-black/90 backdrop-blur-sm cursor-pointer"
               onClick={() => setIsPreviewOpen(false)}
             />
-            
+
             {/* Close Button */}
             <button
               onClick={() => setIsPreviewOpen(false)}
