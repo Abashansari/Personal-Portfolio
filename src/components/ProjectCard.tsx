@@ -141,15 +141,6 @@ export default function ProjectCard({ project, index }: ProjectProps) {
             
             <div className="absolute inset-0 z-30 pointer-events-none border border-transparent group-hover:border-cyan-500/20 rounded-2xl transition-colors duration-700"></div>
           </div>
-          
-          {/* Metadata label */}
-          <div className={`absolute bottom-4 md:-bottom-5 ${isEven ? 'right-4 md:-right-5' : 'left-4 md:-left-5'} bg-white border border-gray-200 px-4 py-2 rounded-lg shadow-lg z-40`}>
-            <span className="text-xs font-mono font-semibold text-cyan-600 tracking-widest uppercase flex items-center gap-2">
-              SYS.{project.id} 
-              <span className="w-1.5 h-1.5 bg-green-500 rounded-full inline-block"></span>
-              ACTIVE
-            </span>
-          </div>
         </motion.div>
         
       </div>
