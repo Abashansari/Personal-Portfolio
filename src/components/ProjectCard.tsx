@@ -1,9 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, X } from "lucide-react";
 
 interface ProjectProps {
   project: {
@@ -14,12 +15,30 @@ interface ProjectProps {
     techStack: string[];
     features: string[];
     imageType: string;
+    github: string;
   };
   index: number;
 }
 
 export default function ProjectCard({ project, index }: ProjectProps) {
   const isEven = index % 2 === 0;
+  const [isPreviewOpen, setIsPreviewOpen] = useState(false);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsPreviewOpen(false);
+    };
+    if (isPreviewOpen) {
+      document.body.style.overflow = "hidden";
+      window.addEventListener("keydown", handleKeyDown);
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isPreviewOpen]);
 
   return (
     <div className="relative p-8 md:p-12 lg:p-16 bg-white border border-gray-200 rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-500">
@@ -85,7 +104,9 @@ export default function ProjectCard({ project, index }: ProjectProps) {
 
             <div className="pt-8">
               <Link 
-                href="#"
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center space-x-2 text-cyan-600 hover:text-cyan-700 transition-colors font-semibold tracking-widest text-sm"
               >
                 <span>VIEW PROJECT</span>
@@ -103,7 +124,10 @@ export default function ProjectCard({ project, index }: ProjectProps) {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="w-full lg:w-1/2 relative group"
         >
-          <div className="relative w-full aspect-video bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden flex justify-center items-center shadow-md group-hover:shadow-xl transition-all duration-700">
+          <div 
+            className="relative w-full aspect-video bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden flex justify-center items-center shadow-md group-hover:shadow-xl transition-all duration-700 cursor-pointer"
+            onClick={() => setIsPreviewOpen(true)}
+          >
             {/* Overlay pattern */}
             <div className="absolute inset-0 bg-grid-pattern opacity-30 mix-blend-overlay z-10 pointer-events-none"></div>
             
@@ -129,6 +153,52 @@ export default function ProjectCard({ project, index }: ProjectProps) {
         </motion.div>
         
       </div>
+
+      {/* Lightbox */}
+      <AnimatePresence>
+        {isPreviewOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8 lg:p-12"
+          >
+            {/* Backdrop */}
+            <div 
+              className="absolute inset-0 bg-black/90 backdrop-blur-sm cursor-pointer" 
+              onClick={() => setIsPreviewOpen(false)}
+            />
+            
+            {/* Close Button */}
+            <button
+              onClick={() => setIsPreviewOpen(false)}
+              className="absolute top-4 right-4 md:top-6 md:right-6 lg:top-8 lg:right-8 z-[110] p-2 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 rounded-full transition-all backdrop-blur-md"
+              aria-label="Close preview"
+            >
+              <X className="w-6 h-6 md:w-8 md:h-8" />
+            </button>
+
+            {/* Image Container */}
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+              className="relative w-full h-full flex items-center justify-center z-[105] pointer-events-none"
+            >
+              <Image
+                src={`/${project.imageType}.png`}
+                alt={`${project.name} preview`}
+                fill
+                className="object-contain pointer-events-auto"
+                sizes="100vw"
+                priority
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

@@ -24,6 +24,7 @@ export const projects = [
       "Data organization",
     ],
     imageType: "desktop",
+    github: "https://github.com/Abashansari/Lab-Inventory-Management-System",
   },
   {
     id: "02",
@@ -53,6 +54,7 @@ export const projects = [
       "Bill generation",
     ],
     imageType: "mobile",
+    github: "https://github.com/Abashansari/Smart-Barcode-Scanner-Billing-App",
   },
   {
     id: "03",
@@ -81,6 +83,7 @@ export const projects = [
       "Improvement suggestions",
     ],
     imageType: "web-saas",
+    github: "https://github.com/Abashansari/Resume-Analyzer",
   },
   {
     id: "04",
@@ -102,5 +105,6 @@ export const projects = [
       "Recommendation generation",
     ],
     imageType: "ml-dashboard",
+    github: "https://github.com/Abashansari/student-performance-risk-predictor",
   },
 ];
