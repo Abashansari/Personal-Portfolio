@@ -73,7 +73,7 @@ export default function Contact() {
             </div>
 
             {/* Heading */}
-            <h2 className="mt-8 text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight text-gray-900">
+            <h2 className="mt-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight text-gray-900">
               HAVE AN IDEA
               <br />
               <span className="text-teal-600">

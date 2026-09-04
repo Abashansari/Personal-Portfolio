@@ -62,7 +62,7 @@ export default function TechStack() {
             <div className="h-[1px] w-12 bg-accent-teal"></div>
             <span className="text-text-secondary font-mono text-sm tracking-widest uppercase">Stack</span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-text-primary tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-text-primary tracking-tight">
             THE STACK IS A TOOL.<br />
             THE PROBLEM IS THE FOCUS.
           </h2>

@@ -29,7 +29,7 @@ export default function About() {
             <div className="h-[1px] w-12 bg-accent-teal"></div>
             <span className="text-text-secondary font-mono text-sm tracking-widest uppercase">About</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-text-primary">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-text-primary">
             CURIOUS BY<br />
             NATURE.<br />
             BUILDER BY<br />

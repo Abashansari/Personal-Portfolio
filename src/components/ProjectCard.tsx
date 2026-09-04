@@ -63,7 +63,7 @@ export default function ProjectCard({ project, index }: ProjectProps) {
               <span className="text-cyan-600 font-mono text-sm font-semibold tracking-widest uppercase mb-2 block">
                 {project.category}
               </span>
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 {project.name}
               </h3>
             </div>
@@ -143,7 +143,7 @@ export default function ProjectCard({ project, index }: ProjectProps) {
           </div>
           
           {/* Metadata label */}
-          <div className={`absolute -bottom-5 ${isEven ? '-right-5' : '-left-5'} bg-white border border-gray-200 px-4 py-2 rounded-lg shadow-lg z-40`}>
+          <div className={`absolute bottom-4 md:-bottom-5 ${isEven ? 'right-4 md:-right-5' : 'left-4 md:-left-5'} bg-white border border-gray-200 px-4 py-2 rounded-lg shadow-lg z-40`}>
             <span className="text-xs font-mono font-semibold text-cyan-600 tracking-widest uppercase flex items-center gap-2">
               SYS.{project.id} 
               <span className="w-1.5 h-1.5 bg-green-500 rounded-full inline-block"></span>

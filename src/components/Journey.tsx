@@ -21,7 +21,7 @@ export default function Journey() {
             <div className="h-[1px] w-12 bg-accent-teal"></div>
             <span className="text-text-secondary font-mono text-sm tracking-widest uppercase">Journey</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-text-primary sticky top-32">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-text-primary sticky top-32">
             MY JOURNEY
           </h2>
         </motion.div>

@@ -69,7 +69,7 @@ const navLinks = [
 
          <Link
             href="#contact"
-            className="group relative px-6 py-2 border border-accent-teal text-accent-teal text-sm tracking-wide hover:bg-accent-teal/10 transition-colors overflow-hidden rounded-sm"
+            className="hidden md:inline-flex group relative px-6 py-2 border border-accent-teal text-accent-teal text-sm tracking-wide hover:bg-accent-teal/10 transition-colors overflow-hidden rounded-sm"
           >
             <span className="relative z-10 flex items-center">
               Get In Touch 
@@ -112,6 +112,14 @@ const navLinks = [
                 {link.name}
               </Link>
             ))}
+
+            <Link
+              href="#contact"
+              onClick={() => setIsOpen(false)}
+              className="text-accent-teal hover:text-accent-cyan text-sm font-bold py-2 transition-colors mt-2"
+            >
+              Get In Touch →
+            </Link>
 
           </div>
 

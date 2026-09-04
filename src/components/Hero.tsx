@@ -61,7 +61,7 @@ export default function Hero() {
                 duration: 0.7,
                 delay: 0.1,
               }}
-              className="text-5xl sm:text-6xl md:text-7xl lg:text-[76px] leading-[1.05] font-bold text-gray-900 tracking-tight"
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-[76px] leading-[1.05] font-bold text-gray-900 tracking-tight"
             >
               I'm{" "}
               <span className="text-cyan-600">
@@ -267,7 +267,7 @@ export default function Hero() {
               </div>
 
               {/* Status Card */}
-              <div className="absolute -bottom-5 -left-5 bg-white border border-gray-200 rounded-xl px-5 py-4 shadow-lg">
+              <div className="absolute bottom-4 left-4 md:-bottom-5 md:-left-5 bg-white border border-gray-200 rounded-xl px-5 py-4 shadow-lg z-20">
 
                 <div className="flex items-center gap-2">
 
