@@ -274,13 +274,13 @@ export default function Hero() {
                   <span className="w-2.5 h-2.5 bg-green-500 rounded-full" />
 
                   <span className="text-sm font-semibold text-gray-700">
-                    Available for opportunities
+                    I Am That I Am
                   </span>
 
                 </div>
 
                 <p className="text-xs text-gray-400 mt-1">
-                  Web • Mobile • AI
+                  To everything there is a season.
                 </p>
 
               </div>

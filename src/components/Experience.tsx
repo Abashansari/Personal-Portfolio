@@ -50,18 +50,17 @@ export default function Experience() {
                   <h4 className="text-accent-cyan font-mono tracking-widest text-sm uppercase">Rapid Skills Acquisition</h4>
                 </div>
                 <div className="flex flex-col md:items-end font-mono text-sm text-text-secondary">
-                  <span className="text-accent-teal font-bold mb-1">26 DAYS</span>
-                  <span>02 Nov 2023 — 28 Nov 2023</span>
+                  <span className="text-accent-teal font-bold mb-1">Nov 2023</span>
                 </div>
               </div>
 
               <div className="space-y-4 mb-8">
                 <p className="text-text-secondary text-lg leading-relaxed font-light">
-                  Completed a 26-day On-Job Training program focused on Rapid Skills Acquisition, gaining practical exposure through hands-on learning, skill development, and professional training.
+Leveraged accelerated IT training to develop Python programming and construct efficient MySQL database queries.
                 </p>
                 <div className="text-sm text-text-secondary flex items-center space-x-2">
                   <span className="uppercase tracking-widest">Institution:</span> 
-                  <span className="text-text-primary">Medhavi Skills University, Bermiok Campus</span>
+                  <span className="text-text-primary">Medhavi Skills University, Bermiok</span>
                 </div>
               </div>
 
@@ -103,7 +102,7 @@ export default function Experience() {
                   [CERTIFICATE.JPG]
                 </div>
                 <Image 
-                  src="/certificate/certificate.jpg" 
+                  src="/certificate.jpeg" 
                   alt="On-Job Training Certificate" 
                   fill
                   className="object-contain z-10"
