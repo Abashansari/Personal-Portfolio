@@ -30,6 +30,10 @@ export const metadata: Metadata = {
   creator: "Abash Ansari",
   publisher: "Abash Ansari",
 
+  verification: {
+    google: "0LPP9vCQ1wJnRS6L1MDPev3MZwxhW-m1878CbcwVHqA",
+  },
+
   alternates: {
     canonical: "/",
   },
