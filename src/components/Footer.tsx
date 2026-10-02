@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
   FaGithub,
   FaLinkedin,
@@ -37,26 +38,29 @@ export default function Footer() {
           <div className="lg:col-span-1">
 
             <Link
-              href="#home"
-              className="inline-flex items-center gap-3 group"
-            >
-              <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-teal-500/10 border border-teal-500/20 group-hover:bg-teal-500/20 group-hover:border-teal-500/40 transition-all duration-300">
-                <FaCode
-                  size={21}
-                  className="text-teal-400 group-hover:scale-110 transition-transform duration-300"
-                />
-              </div>
+  href="#home"
+  className="inline-flex items-center gap-3 group"
+>
+<div className="flex items-center justify-center w-11 h-11 rounded-xl bg-white border border-teal-400 group-hover:bg-gray-50 group-hover:border-teal-500/40 transition-all duration-300">
+  <Image
+    src="/icon.png"
+    alt="Abash Ansari"
+    width={48}
+    height={48}
+    className="object-contain group-hover:scale-110 transition-transform duration-300"
+  />
+</div>
 
-              <div>
-                <h3 className="font-bold text-lg tracking-wider">
-                  ABASH ANSARI
-                </h3>
+  <div>
+    <h3 className="font-bold text-lg tracking-wider">
+      ABASH ANSARI
+    </h3>
 
-                <p className="text-[10px] text-teal-400 font-mono tracking-[0.2em] uppercase mt-0.5">
-                  Full-Stack Developer
-                </p>
-              </div>
-            </Link>
+    <p className="text-[10px] text-teal-400 font-mono tracking-[0.2em] uppercase mt-0.5">
+      Full-Stack Developer
+    </p>
+  </div>
+</Link>
 
             <p className="mt-6 text-gray-400 text-sm leading-7 max-w-xs">
               Art is all about <span className="text-teal-400">Revolution.</span>

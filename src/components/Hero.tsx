@@ -209,7 +209,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-              className="flex items-center justify-center w-12 h-12 rounded-lg border border-gray-200 text-gray-500 hover:text-pink-500 hover:border-pink-300 hover:bg-gradient-to-br hover:from-purple-50 hover:via-pink-50 hover:to-orange-50 hover:-translate-y-1 hover:shadow-md transition-all duration-300"              >
+                className="flex items-center justify-center w-12 h-12 rounded-lg border border-gray-200 text-gray-500 hover:text-pink-500 hover:border-pink-300 hover:bg-gradient-to-br hover:from-purple-50 hover:via-pink-50 hover:to-orange-50 hover:-translate-y-1 hover:shadow-md transition-all duration-300"              >
                 <FaInstagram size={21} />
               </a>
 
@@ -256,7 +256,7 @@ export default function Hero() {
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-gray-100 border border-gray-200 shadow-xl">
 
                 <Image
-                  src="/myPhoto.jpeg"
+                  src="/image.png"
                   alt="Abash Ansari - Full-Stack Developer"
                   fill
                   priority

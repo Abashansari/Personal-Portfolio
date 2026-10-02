@@ -9,14 +9,14 @@ import { FaTerminal } from "react-icons/fa";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Experience & Training", href: "#experience" },
-  { name: "Projects", href: "#projects" },
-  { name: "Tech Stack", href: "#tech-stack" },
-  { name: "Journey", href: "#journey" },
-];
+  const navLinks = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Experience & Training", href: "#experience" },
+    { name: "Projects", href: "#projects" },
+    { name: "Tech Stack", href: "#tech-stack" },
+    { name: "Journey", href: "#journey" },
+  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
@@ -31,15 +31,15 @@ const navLinks = [
           className="flex items-center gap-3 group"
         >
           {/* Laptop Logo */}
-<div className="relative flex items-center justify-center w-12 h-12 group">
-  <Image
-    src="/kali.png"
-    alt="Kali Linux"
-    width={48}
-    height={48}
-    className="object-contain group-hover:scale-110 transition-transform duration-300"
-  />
-</div>
+          <div className="relative flex items-center justify-center w-12 h-12 group">
+            <Image
+              src="/icon.png"
+              alt="Abash Ansari"
+              width={48}
+              height={48}
+              className="object-contain group-hover:scale-110 transition-transform duration-300"
+            />
+          </div>
 
           {/* Logo Text */}
           <div className="flex flex-col">
@@ -67,15 +67,15 @@ const navLinks = [
           ))}
         </div>
 
-         <Link
-            href="#contact"
-            className="hidden md:inline-flex group relative px-6 py-2 border border-accent-teal text-accent-teal text-sm tracking-wide hover:bg-accent-teal/10 transition-colors overflow-hidden rounded-sm"
-          >
-            <span className="relative z-10 flex items-center">
-              Get In Touch 
-              <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-            </span>
-          </Link>
+        <Link
+          href="#contact"
+          className="hidden md:inline-flex group relative px-6 py-2 border border-accent-teal text-accent-teal text-sm tracking-wide hover:bg-accent-teal/10 transition-colors overflow-hidden rounded-sm"
+        >
+          <span className="relative z-10 flex items-center">
+            Get In Touch
+            <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+          </span>
+        </Link>
 
         {/* ================= MOBILE MENU BUTTON ================= */}
 
