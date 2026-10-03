@@ -59,4 +59,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to view th
 - **LinkedIn:** [https://www.linkedin.com/in/abash-ansari-0bb191326](https://www.linkedin.com/in/abash-ansari-0bb191326/)
 
 ---
-*Built with passion by Abash Ansari.*
+*Built by Abash Ansari.*
