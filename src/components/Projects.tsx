@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { projects } from "@/data/projects";
-import ProjectCard from "./ProjectCard";
+import ProjectCarousel from "./ProjectCarousel";
 
 export default function Projects() {
   return (
@@ -44,11 +43,9 @@ export default function Projects() {
           </motion.p>
         </div>
 
-        {/* Projects List */}
-        <div className="flex flex-col space-y-12 lg:space-y-24">
-          {projects.map((project, index) => (
-            <ProjectCard key={project.id} project={project} index={index} />
-          ))}
+        {/* Project Carousel */}
+        <div className="w-full">
+          <ProjectCarousel />
         </div>
 
       </div>

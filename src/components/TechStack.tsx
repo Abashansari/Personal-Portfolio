@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { technologies } from "@/data/technologies";
 import { 
   FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaNodeJs, FaPython, 
-  FaRobot, FaBrain, FaGitAlt, FaGithub, FaLinux, FaAws, FaDocker, FaJava 
+  FaRobot, FaBrain, FaGitAlt, FaGithub, FaLinux, FaAws, FaDocker, FaJava,
+  FaJira, FaPencilRuler
 } from "react-icons/fa";
 import { 
   SiNextdotjs, SiTypescript, SiJavascript, SiTailwindcss, 
@@ -45,6 +46,8 @@ const iconMap: Record<string, IconType> = {
   "Vercel": SiVercel,
   "C++": SiCplusplus,
   "Java": FaJava,
+  "Jira": FaJira,
+  "Wireframing": FaPencilRuler,
 };
 
 export default function TechStack() {

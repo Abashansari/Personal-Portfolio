@@ -32,7 +32,7 @@ export default function Contact() {
           className="flex items-center justify-center gap-4 mb-10"
         >
           <span className="text-teal-600 font-mono text-sm tracking-widest">
-            05
+            06
           </span>
 
           <div className="w-12 h-px bg-teal-500" />

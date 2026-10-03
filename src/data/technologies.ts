@@ -58,4 +58,9 @@ export const technologies = [
     icon: Code2,
     skills: ["C++", "Java", "Python", "JavaScript", "TypeScript"],
   },
+  {
+    category: "MANAGEMENT & DESIGN",
+    icon: Wrench,
+    skills: ["Jira", "Wireframing"],
+  },
 ];
