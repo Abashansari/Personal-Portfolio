@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Abash Ansari - Personal Portfolio
 
-## Getting Started
+Welcome to the repository for my personal developer portfolio! This project is designed to showcase my skills, experience, and the real-world software applications I have built. It features a modern, responsive, and interactive UI with a focus on clean design and smooth animations.
 
-First, run the development server:
+## 🚀 Live Demo
+https://abashansari.vercel.app/
 
+## 💡 Features
+- **Modern & Premium Design:** A clean, dark-themed (or custom-themed) aesthetic tailored for a developer portfolio.
+- **Interactive Project Carousel:** An auto-rotating, fully responsive project showcase built using Framer Motion.
+- **Smooth Animations:** Scroll-based reveal effects and micro-interactions for an engaging user experience.
+- **Fully Responsive:** Carefully optimized for desktop, tablet, and mobile viewing without compromising content or layout.
+- **Dynamic Tech Stack Grid:** Categorized technology and skills section highlighting my tools of the trade.
+
+## 🛠️ Tech Stack
+This project was built with the following technologies:
+- **Framework:** [Next.js](https://nextjs.org/) (App Router / Pages)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/)
+
+## ⚙️ Getting Started
+
+To get a local copy up and running, follow these simple steps:
+
+### Prerequisites
+Make sure you have Node.js installed on your machine.
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Abashansari/Personal-Portfolio.git
+   ```
+2. Navigate into the directory:
+   ```bash
+   cd Personal-Portfolio
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running Locally
+Start the development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Open [http://localhost:3000](http://localhost:3000) with your browser to view the portfolio.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Project Structure
+- `src/components/` - Contains all reusable UI components (e.g., `Hero.tsx`, `Projects.tsx`, `ProjectCarousel.tsx`, `TechStack.tsx`).
+- `src/data/` - Contains structured data for projects and technologies (`projects.ts`, `technologies.ts`) for easy updates.
+- `public/` - Static assets including project images and mockups.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🤝 Contact & Socials
+- **GitHub:** [https://github.com/Abashansari](https://github.com/Abashansari)
+- **Email:** [ansariabash2004@gmail.com](mailto:ansariabash2004@gmail.com)
+- **LinkedIn:** [https://www.linkedin.com/in/abash-ansari-0bb191326](https://www.linkedin.com/in/abash-ansari-0bb191326/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Built with passion by Abash Ansari.*
