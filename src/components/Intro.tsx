@@ -72,7 +72,7 @@ export default function Intro() {
                 </p>
 
                 <p className="mt-3 text-lg md:text-xl italic text-text-secondary">
-                  It is your time, Oh Artist.
+                  It is your time, Oh Artist redeployed.
                 </p>
               </div>
             </blockquote>
