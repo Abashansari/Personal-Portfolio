@@ -1,6 +1,30 @@
+
 export const projects = [
   {
     id: "01",
+    name: "ANSAR AI",
+    category: "AI-POWERED SAAS PLATFORM",
+    description:
+      "An AI-powered website hosting management platform designed to simplify website creation, deployment, hosting, and management. It integrates AI capabilities with cloud infrastructure to help users build and deploy websites efficiently.",
+    techStack: [
+      "Next.js",
+      "Supabase",
+      "Redis",
+      "Cloudflare",
+      "AI Integration",
+    ],
+    features: [
+      "AI-powered website generation",
+      "Website deployment",
+      "Automated deployment workflows",
+      "Website management dashboard",
+      "AI model integration",
+    ],
+    imageType: "ansari-ai",
+    github: "https://github.com/Abashansari/Ansar-Ai",
+  },
+  {
+    id: "02",
     name: "LAB INVENTORY MANAGEMENT SYSTEM",
     category: "DESKTOP APPLICATION",
     description:
@@ -19,15 +43,12 @@ export const projects = [
       "Add / update / remove items",
       "CSV / Excel import",
       "Local database",
-      "Backend API",
-      "Search",
-      "Data organization",
     ],
     imageType: "desktop",
     github: "https://github.com/Abashansari/Lab-Inventory-Management-System",
   },
   {
-    id: "02",
+    id: "03",
     name: "SMART BARCODE SCANNER BILLING APP",
     category: "MOBILE APPLICATION",
     description:
@@ -57,7 +78,7 @@ export const projects = [
     github: "https://github.com/Abashansari/Smart-Barcode-Scanner-Billing-App",
   },
   {
-    id: "03",
+    id: "04",
     name: "AI RESUME ANALYZER",
     category: "AI-POWERED WEB APPLICATION",
     description:
@@ -86,7 +107,7 @@ export const projects = [
     github: "https://github.com/Abashansari/Resume-Analyzer",
   },
   {
-    id: "04",
+    id: "05",
     name: "STUDENT PERFORMANCE RISK PREDICTOR",
     category: "MACHINE LEARNING WEB APPLICATION",
     description:
