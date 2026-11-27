@@ -45,11 +45,10 @@ export default function Intro() {
 
             <blockquote className="relative text-center">
               <p className="text-text-secondary text-lg md:text-xl lg:text-2xl font-light leading-[1.7] tracking-wide">
-                Everyone in this world carries their own burdens, but I believe
-                in one inevitable truth:
+                A true memory is born from fear.<br className="mt-6" />
                 <span className="text-text-primary font-normal">
                   {" "}
-                  with difficulty comes ease.
+                  All you want is to convey yourself.
                 </span>
               </p>
 
@@ -62,7 +61,7 @@ export default function Intro() {
               </p>
 
               <p className="mt-5 text-text-secondary text-lg md:text-xl lg:text-2xl font-light leading-[1.7] tracking-wide">
-                Remember: the insecure and the defeated need unity, not the powerful.
+                Remember: It is the weak who seek unity, not the strong.
               </p>
 
               {/* Final statement */}
